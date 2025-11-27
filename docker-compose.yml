@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  ml-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ml-prediction-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models
+      - ./plots:/app/plots
+      - ./new_retail_data.csv:/app/new_retail_data.csv
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    command: python api.py
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  default:
+    name: ml-network
