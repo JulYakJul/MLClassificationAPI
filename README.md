@@ -90,6 +90,42 @@
   <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_catboost_explain.png?raw=true" width="250"/>
 </div>
 
+## Пример построения графика - результат предсказания модели "Дерево решений"
+<div align="center">
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/DTplot.png?raw=true" width="250"/>
+</div>
+
+## Swagger
+Реализованные ендпоинты:
+<div align="center">
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/swagger.png?raw=true" width="250"/>
+</div>
+
+Запрос в формате JSON для предсказания Product_Category:
+<div align="center">
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/json.png?raw=true" width="250"/>
+</div>
+
+Успешный ответ с предсказанием:
+<div align="center">
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/json_response.png?raw=true" width="250"/>
+</div>
+
+Запрос в формате CSV файла для предсказания Product_Category:
+<div align="center">
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/csv.png?raw=true" width="250"/>
+</div>
+
+Успешный ответ с предсказаниями:
+<div align="center">
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/csv_response.png?raw=true" width="250"/>
+</div>
+
+## Docker
+<div align="center">
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/docker.png?raw=true" width="250"/>
+</div>
+
 # Проект
 ## Структура проекта
 
