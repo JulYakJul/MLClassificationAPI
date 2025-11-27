@@ -33,97 +33,97 @@
 ## Деревья решений (регулируемые параметры - глубина и функция оценки изменения информации)
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_decision_tree.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_decision_tree.png?raw=true" width="650"/>
 </div>
 
 Дерево решений - это алгоритм, который моделирует процесс принятия решений в виде древовидной структуры для решения задач классификации и регрессии. Оно разбивает данные на основе правил (предикатов) в узлах, проводя анализ от корня до листа, где находится конечный результат.
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/TDT_explain.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/TDT_explain.png?raw=true" width="650"/>
 </div>
 
 ## KNN - k-ближайших соседей (регулируемый параметр - количество ближайших соседей)
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_knn.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_knn.png?raw=true" width="650"/>
 </div>
 
 Чтобы классифицировать новую точку данных (точку запроса), алгоритм вычисляет расстояние между точкой запроса и всеми другими точками в наборе данных с помощью функции расстояния. Поиск соседей: алгоритм определяет ближайшие точки данных k (соседи) к точке запроса на основе вычисляемых расстояний.
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_knn_explain.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_knn_explain.png?raw=true" width="650"/>
 </div>
 
 ## Логистическая регрессия (регулируемые параметры - степень полиномиальной функции и коэффициент регуляризации)
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_logistic_regression.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_logistic_regression.png?raw=true" width="650"/>
 </div>
 
 Логистическая регрессия - это алгоритм машинного обучения, используемый для задач классификации, где предсказывается вероятность принадлежности объекта к одному из двух (или более) классов. Принцип работы заключается в применении сигмоидной функции (или "S-образной" кривой) к линейной комбинации входных признаков. В отличие от линейной регрессии, которая предсказывает числа, логистическая регрессия предсказывает вероятность принадлежности к классу (от 0 до 1). Эта функция преобразует результат в значение от 0 до 1, что интерпретируется как вероятность. Для обучения модель находит оптимальные веса признаков, минимизируя функцию потерь (например, логарифмическую функцию потерь) с помощью методов оптимизации, таких как градиентный спуск.
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_logistic_regression_explain.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_logistic_regression_explain.png?raw=true" width="650"/>
 </div>
 
 ## MLP - Многослойный персептрон (регулируемые параметры - метод оптимизации, количество скрытых слоев и нейронов в скрытом слое).
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_mlp.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_mlp.png?raw=true" width="650"/>
 </div>
 
 Многослойный персептрон имеет входной слой и выходной слой с одним или несколькими скрытыми слоями. В MLP все нейроны одного слоя связаны со всеми нейронами следующего слоя. Здесь входной уровень принимает входные сигналы, а желаемая задача выполняется выходным слоем. А скрытые слои отвечают за все расчеты.
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_mlp_explain.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_mlp_explain.png?raw=true" width="650"/>
 </div>
 
 ## Градиентный бустинг
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_catboost.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_catboost.png?raw=true" width="650"/>
 </div>
 
 Алгоритм CatBoost основан на градиентных деревьях решений, и при обучении этой модели последовательно строится набор деревьев решений. По мере обучения каждое последующее дерево строится с меньшими потерями по сравнению с предыдущим деревом.
 
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_catboost_explain.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/train_catboost_explain.png?raw=true" width="650"/>
 </div>
 
 ## Пример построения графика - результат предсказания модели "Дерево решений"
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/DTplot.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/DTplot.png?raw=true" width="650"/>
 </div>
 
 ## Swagger
 Реализованные ендпоинты:
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/swagger.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/swagger.png?raw=true" width="650"/>
 </div>
 
 Запрос в формате JSON для предсказания Product_Category:
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/json.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/json.png?raw=true" width="650"/>
 </div>
 
 Успешный ответ с предсказанием:
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/json_response.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/json_response.png?raw=true" width="650"/>
 </div>
 
 Запрос в формате CSV файла для предсказания Product_Category:
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/csv.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/csv.png?raw=true" width="650"/>
 </div>
 
 Успешный ответ с предсказаниями:
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/csv_response.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/csv_response.png?raw=true" width="650"/>
 </div>
 
 ## Docker
 <div align="center">
-  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/docker.png?raw=true" width="250"/>
+  <img src="https://github.com/JulYakJul/MLClassificationAPI/blob/main/pictures/docker.png?raw=true" width="650"/>
 </div>
 
 # Проект
